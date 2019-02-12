@@ -1,0 +1,203 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Jair">
+    <meta name="generator" content="jair">
+    <title>Pichincho</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Bienvenido Banco Pichincho</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Formulario</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <hr>
+      
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 style="text-align: center;" class="featurette-heading">Formulario<span class="text-muted"></span></h2>
+        
+  <h4 class="featurette-heading">Personal Information:<span class="text-muted"></span></h4>
+  <div class="form-group">
+    <label for="name">Fist Name</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="last_name">Last Name</label>
+    <input type="text" class="form-control" id="last_name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" 
+  </div>
+
+<h4 class="featurette-heading">Credit card information:<span class="text-muted"></span></h4>
+
+  <p>
+
+    Credit card type:
+
+    <select name="Card" id="Credit_card">
+
+      <option>Visa</option>
+
+      <option>Master Card</option>
+
+    </select>
+
+  </p>
+
+  <div class="form-group">
+    <label for="Card_Holder">Card Holder</label>
+    <input type="text" class="form-control" id="Card_Holder">
+  </div>
+<div class="form-group">
+    <label for="Card_Number">Card Number</label>
+	<input type="text" class="form-control" id="Card_Number">
+  </div>
+  <div class="form-group">
+    <label for="CVV2">CVV2</label>
+    <input type="text" class="form-control" id="CVV2">
+  </div>
+  <p>
+
+    Exp. date:
+
+    <select name="Exp" id="Exp_date"> 
+      <option>Enero</option>
+      <option>Febrero</option>
+      <option>Marzo</option>
+      <option>Abril</option>
+      <option>Mayo</option>
+      <option>Junio</option>
+      <option>Julio</option>
+      <option>Agosto</option>
+      <option>Septiembre</option>
+      <option>Octubre</option>
+      <option>Noviembre</option>
+      <option>Diciembre</option>
+    </select>
+
+    <select name="Year" id="year"> 
+      <option>2001</option>
+      <option>2000</option>
+      <option>1999</option>
+      <option>1998</option>
+      <option>1997</option>
+      <option>1996</option>
+      <option>1995</option>
+      <option>1994</option>
+      <option>1993</option>
+      <option>1992</option>
+      <option>1991</option>
+      <option>1990</option>
+    </select>
+  </p>
+
+ <h4 class="featurette-heading">Billing Address information:<span class="text-muted"></span></h4>
+
+  <div class="form-group">
+    <label for="Street_address">Street Address</label>
+    <input type="text" class="form-control" id="Street_address">
+  </div>
+
+  <div class="form-group">
+    <label for="City">City:</label>
+    <input type="text" class="form-control" id="City">
+  </div>
+
+
+  <p>
+
+    State:
+
+    <select name="state" id="state"> 
+      <option>Antioquia</option>
+      <option>Bogotá</option>
+      <option>Cundinamarca</option>
+      <option>Tolima</option>
+    </select>
+  </p>
+
+ <div class="form-group">
+    <label for="zip">ZIP:</label>
+    <input type="text" class="form-control" id="zip">
+  </div>
+
+  <p>
+
+    Country:
+
+    <select name="Country" id="Country"> 
+      <option>Colombia</option>
+      <option>Estados Unidos</option>
+      <option>Argentina</option>
+    </select>
+  </p>
+
+
+<div class="form-group">
+    <label for="Phone">Phone:</label>
+    <input type="text" class="form-control" id="Phone">
+  </div>
+
+  <button type="submit" class="btn btn-primary" onclick="sendForm()">Enviar</button>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+  
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+      <script src="js/app.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+</html>
